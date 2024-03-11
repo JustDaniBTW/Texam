@@ -1,3 +1,6 @@
+BACKUP СО ВСЕМИ ФАЙЛАМИ - https://disk.yandex.ru/d/R3l_fGfFYManZg 
+КАЛЬКУЛЯТОР - https://disk.yandex.ru/d/LPZ12Yg9wqUdV
+
 Билет 1
 
 Вопрос 1 
