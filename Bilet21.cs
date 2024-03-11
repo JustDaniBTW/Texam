@@ -25,3 +25,46 @@ public class Program
         Console.WriteLine($"Сумма всех элементов последовательности: {SumOfSequence(sequence)}");
     }
 }
+
+================xUnix=======================
+
+using Xunit;
+
+public class SequenceSumTests
+{
+    [Fact]
+    public void SumOfSequence_WithPositiveIntegers_ReturnsCorrectSum()
+    {
+        double[] sequence = { 1, 2, 3, 4, 5 };
+        double expectedSum = 15;
+        double actualSum = Program.SumOfSequence(sequence);
+        Assert.Equal(expectedSum, actualSum);
+    }
+
+    [Fact]
+    public void SumOfSequence_WithNegativeIntegers_ReturnsCorrectSum()
+    {
+        double[] sequence = { -1, -2, -3, -4, -5 };
+        double expectedSum = -15;
+        double actualSum = Program.SumOfSequence(sequence);
+        Assert.Equal(expectedSum, actualSum);
+    }
+
+    [Fact]
+    public void SumOfSequence_WithMixedIntegers_ReturnsCorrectSum()
+    {
+        double[] sequence = { -1, 2, -3, 4, -5 };
+        double expectedSum = -3;
+        double actualSum = Program.SumOfSequence(sequence);
+        Assert.Equal(expectedSum, actualSum);
+    }
+
+    [Fact]
+    public void SumOfSequence_WithEmptyArray_ReturnsZero()
+    {
+        double[] sequence = new double[0];
+        double expectedSum = 0;
+        double actualSum = Program.SumOfSequence(sequence);
+        Assert.Equal(expectedSum, actualSum);
+    }
+}
